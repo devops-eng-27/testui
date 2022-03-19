@@ -1,0 +1,26 @@
+{{>layouts/header}}
+
+<h1>KAFKA MQ Service</h1>
+
+<form class="mqcontainer" action="/index" method="get">
+    <button type="submit" class="btn btn-primary">INDEX</button>
+</form>
+
+<table class="table table-hover">
+    <thead class="thread-strong">
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">PW</th>
+        <th scope="col">Token</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{user.userId}}</td>
+        <td>{{user.userPw}}</td>
+        <td>{{token}}</td>
+    </tr>
+    </tbody>
+</table>
+
+{{>layouts/footer}}

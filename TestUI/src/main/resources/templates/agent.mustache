@@ -1,0 +1,45 @@
+{{>layouts/header}}
+
+<h1 style="padding: 30px 0px 0px 30px;"><b>KAFKA Agent</b></h1>
+<h5 style="padding: 0px 0px 30px 30px;">Kafka MQ 서비스를 Control 할 수 있습니다.</h5>
+
+
+<form name="checker" id="checker" action="/agentcontrol" method="get">
+    <div style="padding: 30px 30px 0px 30px;">
+    <table class="table table-hover">
+        <thead class="thread-strong">
+        <tr>
+            <th scope="col">check</th>
+            <th scope="col">이름</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <input class="form-check-input" name="kafka" type="checkbox" value="docker_kafka1_1">
+            </td>
+            <td>kafka</td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-check-input" name="zookeeper" type="checkbox" value="docker_zoo1_1">
+            </td>
+            <td>zookeeper</td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-check-input" name="kafdrop" type="checkbox" value="docker_kafdrop_1">
+            </td>
+            <td>kafdrop UI</td>
+        </tr>
+
+        <div class="col-md-12" style="padding: 0px 0px 0px 30px;">
+                    <button type="submit" name="start" class="btn btn-primary" value="start">시작</button>
+                    <button type="submit" name="stop" class="btn btn-warning" value="stop">정지</button>
+                    <button type="submit" name="restart" class="btn btn-primary" value="restart">재시작</button>
+        </div>
+        </tbody>
+    </table>
+    </div>
+</form>
+{{>layouts/footer}}

@@ -1,0 +1,26 @@
+{{>layouts/header}}
+
+<!-- content -->
+
+<div class="col-md-12" align="center" style="padding: 100px;">
+    <div class="col-md-4">
+        <form class="usercontainer" action="/index" method="post">
+            <a class="navbar-brand" href="#" align="center">
+                <img src="https://i.pinimg.com/474x/c6/2b/75/c62b75ff6fe39e747bb659e692d394a7.jpg" width="250px" height="250px" alt="Cloud"></img>
+            </a>
+            <div class="mb-3" align="left" style="padding-top: 30px;">
+                <label for="userid" class="form-label">UserID</label>
+                <input type="id" class="form-control" name="userId" autofocus value="clouddev@gmail.com">
+            </div>
+            <div class="mb-3" align="left">
+                <label for="userpassword" class="form-label">Password</label>
+                <input type="password" class="form-control" name="userPw" autofocus value="Swdev12#">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+
+
+{{>layouts/footer}}
